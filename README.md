@@ -125,13 +125,3 @@ Here are the main variables you may want to edit in the script:
 
 - **Date Range**:  
   The script uses a day-by-day loop. Double-check you haven’t reversed `START_DATE` and `END_DATE`.
-
----
-
-## License
-
-This script is provided **as-is** under no specific license. You are free to modify or reuse it in your own environment. For any third-party components (like `boto3`), see their respective licenses.
-
----
-
-**Happy Merging!** If you have any questions or issues, feel free to reach out.
