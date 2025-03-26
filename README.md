@@ -37,10 +37,13 @@ Many AWS Backup or custom backup services generate daily CSV reports and place t
 1. **Python 3.7+**  
    The script uses Python’s standard libraries plus `boto3`.
 
-2. **AWS Credentials**  
+2. **Instance List**
+   Create a text file called `instances.txt` to list your instance ids in the file for processing
+
+3. **AWS Credentials**  
    You must have valid AWS credentials configured to allow S3 read access. The easiest way is to run `aws configure` and ensure you have the correct `[default]` profile, or set up environment variables.
 
-3. **boto3 Library**  
+4. **boto3 Library**  
    Install via `pip install boto3` if you don’t already have it.
 
 ---
@@ -53,6 +56,7 @@ Many AWS Backup or custom backup services generate daily CSV reports and place t
    - `BASE_PREFIX`: The common prefix path in that bucket, e.g., `Backup/12345/us-east-1`.
    - `START_DATE` / `END_DATE`: The date range you want to merge (format `datetime(YYYY, MM, DD)`).
    - `OUTPUT_CSV`: The name of the local CSV file where all data will be combined.
+   - `INSTANCES_FILE`: The list of Instance Ids you want to check against
 3. **Run the script**:
    ```bash
    python backup_report.py
