@@ -55,9 +55,9 @@ Many AWS Backup or custom backup services generate daily CSV reports and place t
    - `OUTPUT_CSV`: The name of the local CSV file where all data will be combined.
 3. **Run the script**:
    ```bash
-   python merge_all_csv.py
+   python backup_report.py
    ```
-   Where `merge_all_csv.py` is the name of the script file.
+   Where `backup_report.py` is the name of the script file.
 
 4. **Review the results**:
    - The script logs each day’s prefix it checks.
